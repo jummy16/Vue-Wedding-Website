@@ -1,5 +1,6 @@
 <template>
     <Navbar/>
+    <Schedule/>
     <!-- <Slide/> -->
   <v-app>
 
@@ -13,6 +14,7 @@
 
 <script>
 import Navbar from './components/Navbar.vue'
+import Schedule from './components/Schedule.vue'
 // import Slide from './components/Slide.vue'
 
 export default {
@@ -20,6 +22,7 @@ export default {
 
   components: {
     Navbar,
+    Schedule,
     // Slide,
   },
 
