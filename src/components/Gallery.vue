@@ -7,8 +7,7 @@
       </v-col>
       <v-col cols="12" md="6">
         <p>
-          A beautiful collection of memories from our special day. Browse through
-          and relive the moments that made our wedding unforgettable.
+          Captured moments of love and joy—our journey to forever begins here.
         </p>
       </v-col>
     </v-row>
@@ -34,16 +33,23 @@
 
 
 <script>
+import Photo1 from '../assets/omo(18).jpg'
+import Photo2 from '../assets/omo(19).jpg'
+import Photo3 from '../assets/omo(25).jpg'
+import Photo4 from '../assets/omo(16).jpg'
+import Photo5 from '../assets/omo(26).jpg'
+import Photo6 from '../assets/omo(32).jpg'
 export default {
   data() {
     return {
       photos: [
-        { src: "photo1.jpg", alt: "Photo 1" },
-        { src: "photo2.jpg", alt: "Photo 2" },
-        { src: "photo3.jpg", alt: "Photo 3" },
-        { src: "photo4.jpg", alt: "Photo 4" },
-        { src: "photo5.jpg", alt: "Photo 5" },
-        { src: "photo6.jpg", alt: "Photo 6" },
+
+        { src: Photo1, alt: "Photo 1" },
+        { src: Photo2, alt: "Photo 2" },
+        { src: Photo3, alt: "Photo 3" },
+        { src: Photo4, alt: "Photo 4" },
+        { src: Photo5, alt: "Photo 5" },
+        { src: Photo6, alt: "Photo 6" },
       ],
     };
   },
@@ -66,7 +72,6 @@ export default {
 }
 
 .gallery-img {
-  height: 200px;
   object-fit: cover;
 }
 
@@ -75,6 +80,7 @@ export default {
 }
 
 .gallery-item:hover {
-  transform: scale(1.05); /* Add a hover effect for interactivity */
+  transform: scale(1.05); 
+  transition: 1s;
 }
 </style>
