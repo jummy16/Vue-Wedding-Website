@@ -12,8 +12,8 @@
       <v-btn text href="#schedule">EVENT SCHEDULE</v-btn>
       <v-btn text href="#gallery">GALLERY</v-btn>
       <v-btn text href="#couple-story">COUPLE STORY</v-btn>
-      <v-btn text>MESSAGE</v-btn>
-      <v-btn text>VENDORS</v-btn>
+      <v-btn text href="#message">MESSAGE</v-btn>
+      <v-btn text href="#vendor">VENDORS</v-btn>
     </v-app-bar>
 
     

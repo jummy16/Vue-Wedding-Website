@@ -3,7 +3,8 @@
     <Schedule/>
     <Gallery/>
     <Story/>
-    <!-- <Slide/> -->
+    <Message/>
+    <Vendor/>
   <v-app>
 
     <v-main>
@@ -19,6 +20,8 @@ import Navbar from './components/Navbar.vue'
 import Schedule from './components/Schedule.vue'
 import Gallery from './components/Gallery.vue'
 import Story from './components/Story.vue'
+import Message from './components/Message.vue'
+import Vendor from './components/Vendor.vue'
 
 export default {
   name: 'App',
@@ -28,6 +31,8 @@ export default {
     Schedule,
     Gallery,
     Story,
+    Message,
+    Vendor,
   },
 
   data: () => ({
@@ -35,3 +40,7 @@ export default {
   }),
 }
 </script>
+
+<style>
+
+</style>
