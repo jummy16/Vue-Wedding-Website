@@ -2,6 +2,7 @@
     <Navbar/>
     <Schedule/>
     <Gallery/>
+    <Story/>
     <!-- <Slide/> -->
   <v-app>
 
@@ -17,7 +18,7 @@
 import Navbar from './components/Navbar.vue'
 import Schedule from './components/Schedule.vue'
 import Gallery from './components/Gallery.vue'
-// import Slide from './components/Slide.vue'
+import Story from './components/Story.vue'
 
 export default {
   name: 'App',
@@ -26,7 +27,7 @@ export default {
     Navbar,
     Schedule,
     Gallery,
-    // Slide,
+    Story,
   },
 
   data: () => ({
