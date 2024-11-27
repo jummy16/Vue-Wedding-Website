@@ -1,14 +1,14 @@
 <template>
-    <Navbar/>
+    
+  <v-app>
+
+    <v-main>
+      <Navbar/>
     <Schedule/>
     <Gallery/>
     <Story/>
     <Message/>
     <Vendor/>
-  <v-app>
-
-    <v-main>
-
     </v-main>
 
   </v-app>
@@ -42,5 +42,6 @@ export default {
 </script>
 
 <style>
+ 
 
 </style>

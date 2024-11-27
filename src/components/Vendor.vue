@@ -1,6 +1,7 @@
 <template>
+
 <div id="vendor"></div>
-  <v-container fluid class="vendors-page">
+  <v-container class="vendors-page">
     <v-row class="vendors-row">
       <v-col
         v-for="(vendor, index) in vendors"
@@ -26,6 +27,13 @@
       </v-col>
     </v-row>
   </v-container>
+  <hr class="mt-10"/>
+  <div class="footer">
+      <h2> Made</h2>
+      <img class="ring" src="../assets/ring-removebg-preview.png" alt="wedding ring">
+      <h2>By Exquisite Event</h2>
+  </div>
+  
 </template>
 
 
@@ -135,5 +143,22 @@ export default {
 .v-btn {
   margin-top: 10px;
   width: 100%;
+}
+.mt-10{
+  margin-top: 10rem !important;
+}
+.ring{
+  width: 4rem;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (max-width:600px) {
+  .vendor-card {
+  margin-right: 2.5rem;
+}
 }
 </style>

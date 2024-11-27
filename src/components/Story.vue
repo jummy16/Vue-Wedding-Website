@@ -10,7 +10,7 @@
     >
       
       <v-carousel-item>
-        <v-row class="d-flex align-center">
+        <v-row class="d-flex align-center justify-content couple-picture">
           
           <v-col cols="6">
             <v-img 
@@ -22,8 +22,8 @@
             />
           </v-col>
           <!-- Bride's Story -->
-          <v-col cols="6">
-            <div>
+          <v-col cols="6" class="story-container">
+            <div class="story">
               <h2 class="text-h4">{{ stories[0].name }}</h2>
               <p>{{ stories[0].story }}</p>
             </div>
@@ -33,7 +33,7 @@
 
       
       <v-carousel-item>
-        <v-row class="d-flex align-center">
+        <v-row class="d-flex align-center couple-picture">
           
           <v-col cols="6">
             <v-img 
@@ -45,8 +45,8 @@
             />
           </v-col>
           <!-- Groom's Story -->
-          <v-col cols="6">
-            <div>
+          <v-col cols="6" class="story-container">
+            <div class="story">
               <h2 class="text-h4">{{ stories[1].name }}</h2>
               <p>{{ stories[1].story }}</p>
             </div>
@@ -83,21 +83,24 @@ export default {
 <style scoped>
 .couple-story-page {
   padding: 20px;
-  /* background-color: #f9f9f9; */
   background-color: #fffbf2;
   margin: 2rem;
 }
-
+ 
 .v-carousel-item {
   display: flex;
   align-items: center;
   justify-content: center;
   height: auto;
 }
+
 .v-carousel {
   border-radius: 8px;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
+
 h2 {
   margin-bottom: 10px;
   color: black;
@@ -108,5 +111,37 @@ p {
   line-height: 1.6;
   color: #555;
 }
+
+.story {
+  max-width: 100%;
+  overflow: visible;
+  word-wrap: break-word;
+  margin-right: 15rem;
+  justify-content: center;
+  line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+  .couple-picture {
+    flex-direction: column; 
+    align-items: flex-start; 
+    padding: 0 10px; 
+  }
+
+  .story-container {
+    max-width: 100%; 
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  .story {
+    padding: 0 10px; 
+    text-align: left;
+    margin-right: 2rem;
+  }
+   
+}
+
 </style>
 
